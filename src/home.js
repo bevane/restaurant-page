@@ -1,7 +1,6 @@
 import Cover from './cover.jpg'
 
 export default function homePage() {
-  console.log("homepage starting");
   const content = document.querySelector("#content");
 
   const headline = document.createElement("h2");

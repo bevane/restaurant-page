@@ -1,6 +1,5 @@
 import homePage from "./home.js";
-
-console.log("webpack working");
+import menuPage from "./menu.js";
 
 (function changeContent() {
   const content = document.querySelector("#content");
@@ -11,6 +10,11 @@ console.log("webpack working");
   homeBtn.addEventListener("click", () => {
     content.replaceChildren();
     homePage();
+  });
+
+  menuBtn.addEventListener("click", () => {
+    content.replaceChildren();
+    menuPage();
   });
 
 })();
