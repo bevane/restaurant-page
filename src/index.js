@@ -1,3 +1,4 @@
+import './style.css';
 import homePage from "./home.js";
 import menuPage from "./menu.js";
 import aboutPage from "./about.js";
@@ -7,6 +8,8 @@ import aboutPage from "./about.js";
   const homeBtn = document.querySelector(".home");
   const menuBtn = document.querySelector(".menu");
   const aboutBtn = document.querySelector(".about");
+
+  homePage();
 
   homeBtn.addEventListener("click", () => {
     content.replaceChildren();
