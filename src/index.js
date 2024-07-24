@@ -1,5 +1,6 @@
 import homePage from "./home.js";
 import menuPage from "./menu.js";
+import aboutPage from "./about.js";
 
 (function changeContent() {
   const content = document.querySelector("#content");
@@ -15,6 +16,11 @@ import menuPage from "./menu.js";
   menuBtn.addEventListener("click", () => {
     content.replaceChildren();
     menuPage();
+  });
+
+  aboutBtn.addEventListener("click", () => {
+    content.replaceChildren();
+    aboutPage();
   });
 
 })();
